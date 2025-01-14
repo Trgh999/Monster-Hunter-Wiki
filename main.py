@@ -37,14 +37,14 @@ newcolor = {
     "0xFF0000": 0xFF0000
 }
 datamap=[]
-with open('Maps.csv') as csv_file:
+with open('Maps.csv', errors='ignore') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     for row in csv_reader:
         datamap.append(row)
 
 
 datamonster=[]
-with open('Monsters.csv') as csv_file:
+with open('Monsters.csv', errors='ignore') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     for row in csv_reader:
         datamonster.append(row)
